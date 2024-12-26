@@ -1,0 +1,149 @@
+body {
+    font-family: "Comic Sans MS", "Arial", sans-serif;
+    background: linear-gradient(rgba(173, 216, 230, 0.8), rgba(135, 206, 250, 0.8)),
+    url("https://cdn.pixabay.com/photo/2024/05/26/16/35/anime-8789124_1280.jpg") no-repeat center center fixed;
+
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007BFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+}
+
+form {
+    background: white;
+    border: 3px solid #007BFF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #c61b1b;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+button {
+    background: #0016fd;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: #0016fd;
+    transform: scale(1.1);
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #0e41f8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #413976;
+    color: #555;
+}
+
+th {
+    background: #ffe1ec;
+    font-size: 1.2rem;
+    color: #3421af;
+}
+
+td {
+    font-size: 1rem;
+}
+
+tr:hover {
+    background: #fff0f5;
+    transition: background 0.3s ease;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 3px solid #111180;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.modal button {
+    background: #111180;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.modal button:hover {
+    background: #3421af;
+    transform: scale(1.1);
+}
+
+
+@keyframes animeText {
+    0% {
+        letter-spacing: 1px;
+        opacity: 0.8;
+    }
+    50% {
+        letter-spacing: 4px;
+        opacity: 1;
+    }
+    100% {
+        letter-spacing: 1px;
+        opacity: 0.8;
+    }
+}
+
+h1 {
+    animation: animeText 3s infinite;
+}
